@@ -32,7 +32,7 @@ func (ic *ICode) Invoke(cell cell.Cell) pb.Response {
 
 	cmd := exec.Command("touch", "/icode/invoke")
 	cmd.Run()
-
+d
 	function, args := cell.GetFunctionAndParameters()
 	if function == "initA" {
 		r = ic.initA(cell, args)
